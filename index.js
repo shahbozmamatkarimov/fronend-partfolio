@@ -40,7 +40,7 @@ function showSlides(n) {
     for (i = 0; i < background.length; i++) {
         slider.src = background[slideIndex-1]
     }
-    number.innerHTML = slideIndex + ' / 3'
+    number.innerHTML = slideIndex + ' / 15'
 }
 
 function types(val){
