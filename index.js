@@ -1,3 +1,8 @@
+let login = localStorage.getItem('login');
+if (!login) {
+    location.href = "./html/register.html";
+}
+
 // our works
 let background = [
     "https://www.siko.cz/medias/gn-mramor-koupelna-012.jpg?context=bWFzdGVyfGF6dXJlaW1hZ2VzfDIxOTk3MXxpbWFnZS9qcGVnfGgyYS9oN2IvOTY4MDMyNTQ3NjM4Mi9nbi1tcmFtb3Ita291cGVsbmFfMDEyLmpwZ3w2NDk5MTRmOTIwZDU2YzQxN2ZlZjFhNTA0ZDNhMjg3NDJjODg5MzU1MmM4NzNkZGY5NDNkYjY4NzFjNWVhYjEy",
@@ -40,7 +45,7 @@ function showSlides(n) {
     for (i = 0; i < background.length; i++) {
         slider.src = background[slideIndex-1]
     }
-    number.innerHTML = slideIndex + ' / 3'
+    number.innerHTML = slideIndex + ' / 15'
 }
 
 function types(val){
